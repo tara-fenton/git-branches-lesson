@@ -7,18 +7,20 @@
 - Create new branches on your own repo
 
 - Make pull requests and merge on your repo
-- <b>End Goal:</b> more comfortable using branches
+- <b>End Goal:</b> Become more comfortable using branches
 
-## About Git
+## About Git and GitHub
 
-Git is a version control and repos can be thought of as storage of files and the history of the changes made to those files.
+First of all, GitHub is not git. Many people understandably confuse the two. GitHub is a website for hosting projects that use git.
+
+Git is a type of version control system (VCS) that makes it easier to track changes to files. For example, when you edit a file, git can help you determine exactly _what_ changed, _who_ changed it, and _why_.
 
 You own your repos and the changes allowed to those files. You can allow others to make changes to your files
 (code base) but that is for another lesson. Next week we will cover working on a repo as a team and resolving merge conflicts.
 
 ## Create a new repo
 
-Go to github.com/your-username?tab=repositories and create a new repo using the [NEW] green button
+Go to [github.com/your-username?tab=repositories](github.com) and create a new repo using the [NEW] green button
 
 repositoty name is : branch-lesson
 
@@ -36,7 +38,7 @@ In github select the code button to copy the github address
 
 ## Clone the repo in VS and make some changes
 
-In VS terminal type `git clone <paste github address>`
+In VS terminal type `git clone <paste github repo address>`
 
 Copy this text into your README.md
 
@@ -66,7 +68,7 @@ TEST: In VS terminal run the `open index.html` to see your set up and confirm yo
 
 `git commit -m 'set up'`
 
-`git push`
+`git push -u origin master`
 
 Refresh github to see your changes
 
@@ -153,7 +155,7 @@ YOU NEED TO PUSH TO YOUR BRANCH!
 
 `git push origin tf-js`
 
-Go to github and confirm your branch was successful by checking the branches dropdown
+Go to github and confirm your branch was successful pushed by checking the branches dropdown
 
     Confirm with a 🦄: the push was successful
 
@@ -183,12 +185,13 @@ COOL! We have successfully created a branch and merged it into the master branch
 
 Notes:
 
-- Git status is your new best friend
-- Zsh terminal is used to see what branch you are on
+- Git status and Zsh terminal are your new best friends
+- Always DOUBLE check the Zsh terminal to see what branch you are on
+- DO NOT FORGET TO PULL before you branch off of master
 
 <br>
     
-    Confirm with a 🌈: master has your branches changes
+    Confirm with a 🌈: master has your branch changes in VS
 
 <br>
 <br>
@@ -199,7 +202,7 @@ Run the command ` git checkout -b initials-another-change`
 
 In index.html change the body text to: `I love making branches!`
 
-Let's examine the git tab in the VS code editor. Using this tab BEFORE you add is the recommendation. It will allow you to make changes if needed before you add and commit your files. When everything looks as you expect it to, we're almost ready to add and commit.
+Let's examine the git tab in the VS code editor. Using this tab BEFORE you git add is the recommendation. It will allow you to make changes if needed before you add and commit your files. When everything looks as you expect it to, we're almost ready to add and commit.
 
 ### ❓ What should you do before adding and commiting?
 
@@ -211,14 +214,13 @@ Let's examine the git tab in the VS code editor. Using this tab BEFORE you add i
  </summary>
  <br>
 
-Get in the habit of running to run this command first `git status` everytime before you add and commit.
+MAKE SURE YOU ARE ON THE RIGHT BRANCH!
 
-    Changes not staged for commit:
-        (use "git add <file>..." to update what will be committed)
-        (use "git restore <file>..." to discard changes in working directory)
-                modified:   index.html
+You can view what branch you are on in the terminal if you are using Zsh terminal
 
-    no changes added to commit (use "git add" and/or "git commit -a")
+Get in the habit of checking the branch name and running this command `git status` everytime BEFORE you add and commit. Also, do a few git statuses to see what the terminal looks like at each stage of add, commit and push steps.
+
+Why? You don't want files to be added to an incorrect branch. If you forget to use VS code's git tab this will be a step that will catch you from adding files that shouldn't be added there. Being cautious in the beginning steps will save you and your team a lot of headaches.
 
 </details>
 
@@ -246,7 +248,7 @@ Steps to merge from VS terminal:
 
 `open index.html`
 
-BUT WAIT YOUR NOT DONE!
+BUT WAIT YOU ARE NOT DONE!
 
 ### ❓ What do you think you need to do to finish this merge?
 
@@ -274,18 +276,22 @@ Remember when we merged the first branch using github and selected the delete bu
 
 Run the command: `git branch` this will show you what branches are on your machine, not on github. If you want to view or delete the branches on github you will need to do that from the browser interface.
 
+Type `:q` to quit out of the list of branches
+
 Run the command: `git branch -D <initials-branch-name>`
 
-Clean up your branches
+Clean up your branches, it's safe to do this if you have verified the changes were successfully added to master. If you don't feel comfortable deleting a branch right now, that's ok! Once you get more practice you'll want to clean them up so when you run the `git branch` command you can focus on the active branch you are working on
 
-NOTE: You will not be able to delete the branch you are currently on
+NOTE: You will not be able to delete the branch you are currently on. Remember that `git checkout <branch-name>` is how to switch branches
 
-### IMPORTANT: Always make a branch off of the master branch!
+### IMPORTANT: Always make a new branch off of the master branch!
 
 If this all of this seems like a lot, it's because it is! But it will become more intuitive the more you do it so please get some reps in over the weekend 💪💪💪
 
 It might be helpful for you to make your own notes/cheatsheet with the necessary steps to merge, to be used while in project week.
 
 ### Additional Resources
+
+[Understanding Git (part 1) — Explain it Like I’m Five](https://hackernoon.com/understanding-git-fcffd87c15a3)
 
 [3.2 Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
