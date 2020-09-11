@@ -108,7 +108,6 @@ Edit the index.html body text and to add the script tag within the body tag
 <head>
 <title>This is my repo!</title>
 </head>
-</head>
 <body>
 Instead of working on the master branch this is my newly created branch, woohooo!
 <script type="text/javascript" src="script.js"></script>
