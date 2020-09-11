@@ -77,7 +77,7 @@ Refresh github to see your changes
 
 Next we will make a branch! We need to make a branch so that the master branch remains untouched until we are ready to merge our new changes after testing and confirming the changes are functional. Developers use branches to protect the master branch from bugs and incomplete code.
 
-the command to make a branch is: `git checkout -b initials-branch-name`
+the command to make a branch is: `git checkout -b <initials-branch-name>`
 
 ### Notes on the command to create a branch:
 
@@ -85,7 +85,7 @@ _checkout_ is the command used to switch to branch name following the command
 
 _-b_ is shorthand to create a new branch
 
-_initials-branch-name_ is the name of the newly created branch. You want to use your initals and a one to two word description of what you are doing on this branch. **Use your initials and a description for all of your branches!** example for this lesson: `tf-js`
+_initials-branch-name_ is the name of the newly created branch. You want to use your initals and a one to two word description of what you are doing on this branch. **Use your initials and a description for all of your branches!** example for this part of the lesson: `tf-js-alert`
 
 There is a command to create a branch without switching to that branch `git branch <initials-branch-name>` but `git checkout -b <initials-branch-name>` is the perferred way and you should use that one for the remainder of the lesson
 
@@ -149,7 +149,7 @@ Untracked files:
 
 YOU NEED TO PUSH TO YOUR BRANCH!
 
-`git push origin tf-js`
+`git push origin <initials-another-change>`
 
 Go to github and confirm your branch was successful pushed by checking the branches dropdown
 
@@ -194,7 +194,7 @@ Notes:
 
 ## Let's get some muscle memory 💪 and make a "another-change" branch
 
-Run the command ` git checkout -b initials-another-change`
+Run the command ` git checkout -b <initials-another-change>`
 
 In index.html change the body text to: `I love making branches!`
 
@@ -226,7 +226,7 @@ Why? You don't want files to be added to an incorrect branch. If you forget to u
 
 `git commit -m 'edit index'`
 
-`git push origin another-change`
+`git push origin <initials-another-change>`
 
     Confirm with a 💪: the another-change branch is pushed up to github
 
@@ -240,7 +240,7 @@ Steps to merge from VS terminal:
 
 `git checkout master`
 
-`git merge another-change`
+`git merge <initials-another-change>`
 
 `open index.html`
 
@@ -278,7 +278,7 @@ Run the command: `git branch -D <initials-branch-name>`
 
 Clean up your branches, it's safe to do this if you have verified the changes were successfully added to master. If you don't feel comfortable deleting a branch right now, that's ok! Once you get more practice you'll want to clean them up so when you run the `git branch` command you can focus on the active branch you are working on
 
-NOTE: You will not be able to delete the branch you are currently on. Remember that `git checkout <branch-name>` is how to switch branches
+NOTE: You will not be able to delete the branch you are currently on. Remember that `git checkout <initials-branch-name>` is how to switch branches
 
 ### IMPORTANT: Always make a new branch off of the master branch!
 
