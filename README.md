@@ -20,9 +20,9 @@ You own your repos and the changes allowed to those files. You can allow others 
 
 ## Create a new repo
 
-Go to [github.com/your-username?tab=repositories](github.com) and create a new repo using the [NEW] green button
+Go to [github.com](http://github.com) and create a new repo using the [NEW] green button
 
-repositoty name is : branch-lesson
+repository name is : branch-lesson
 
 Select : Public
 
@@ -55,7 +55,6 @@ Copy the following code into the index.html file
 <head>
 <title>This is my repo!</title>
 </head>
-</head>
 <body>
 Working on the master branch is no bueno!
 </body>
@@ -72,15 +71,13 @@ TEST: In VS terminal run the `open index.html` to see your set up and confirm yo
 
 Refresh github to see your changes
 
-    Confirm with a 🌶️: the alert and html page show up in your master branch on github
+    Confirm with a 🌶️: the README.md and index.html files show up in your master branch on github
 
 ## Make a branch
 
 Next we will make a branch! We need to make a branch so that the master branch remains untouched until we are ready to merge our new changes after testing and confirming the changes are functional. Developers use branches to protect the master branch from bugs and incomplete code.
 
-the command to make a branch is:
-
-`git checkout -b initials-branch-name`
+the command to make a branch is: `git checkout -b initials-branch-name`
 
 ### Notes on the command to create a branch:
 
@@ -90,7 +87,7 @@ _-b_ is shorthand to create a new branch
 
 _initials-branch-name_ is the name of the newly created branch. You want to use your initals and a one to two word description of what you are doing on this branch. **Use your initials and a description for all of your branches!** example for this lesson: `tf-js`
 
-There a command to create a branch without switching to that branch `git branch <initials-branch-name>` but `git checkout -b <initials-branch-name>` is the perferred way and you should use that one for the remainder of the lesson
+There is a command to create a branch without switching to that branch `git branch <initials-branch-name>` but `git checkout -b <initials-branch-name>` is the perferred way and you should use that one for the remainder of the lesson
 
 Your zsh will now say the name of your branch, not master
 
@@ -179,7 +176,7 @@ BUT WAIT YOU ARE NOT DONE!
 
 In your VS terminal run the command ` git checkout master` this will switch your branch to master on your machine
 
-Now you need to run the command ` git pull` this will pull down the merged changes that now live on the master branch
+Now you need to run the command ` git pull` this will pull down the merged changes that now live on the master branch on github to your machine
 
 COOL! We have successfully created a branch and merged it into the master branch
 
