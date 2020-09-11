@@ -38,6 +38,8 @@ In github select the code button to copy the github address
 
 ## Clone the repo in VS and make some changes
 
+Navigate in the terminal to find the folder you want your repo to live
+
 In VS terminal type `git clone <paste github repo address>`
 
 Copy this text into your README.md
@@ -149,7 +151,7 @@ Untracked files:
 
 YOU NEED TO PUSH TO YOUR BRANCH!
 
-`git push origin <initials-another-change>`
+`git push origin <initials-branch-name>`
 
 Go to github and confirm your branch was successful pushed by checking the branches dropdown
 
